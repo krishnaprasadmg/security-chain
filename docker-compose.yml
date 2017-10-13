@@ -1,16 +1,15 @@
 version: '2'
 
 services:
-    php:
-        build: docker/php7
+    web:
+        image: ntboes/golang-gin
+        command: gin
         links:
             - bigchaindb
         ports:
-            - 80:80
+            - 3000:80
         volumes:
-            - ./:/var/www
-            -  ~/cache/composer/:/root/cache/composer
-        command: php bin/console server:run 0.0.0.0:80 --env=dev
+            - ./app:/go/src/app
     rethinkdb:
         image: rethinkdb
         ports:

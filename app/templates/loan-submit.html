@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Security Chain</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-6">
+            <h3>Create loan security</h3>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-6">
+            <form name="form" method="post">
+                <div id="form">
+                    <div class="form-group">
+                        <label class="control-label required" for="form_isin">Isin</label>
+                        <input type="text" id="form_isin" name="isin" required="required" class="form-control"/>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label required" for="form_maturity">Maturity</label>
+                        <input type="text" id="form_maturity" name="maturity" required="required" class="form-control"/>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label required" for="form_nominalAmount">Nominal
+                        Amount (EUR cents)</label>
+                        <input type="text" id="form_nominalAmount" name="nominalAmount" required="required" class="form-control"/>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label required" for="form_interestRate">Interest rate</label>
+                        <input type="text" id="form_interestRate" name="interestRate" required="required" class="form-control"/>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label required" for="form_borrower">Borrower</label>
+                        <input type="text" id="form_borrower" name="borrower" required="required" class="form-control"/>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label required" for="form_grade">Grade</label>
+                        <select id="form_grade" name="grade" class="form-control">
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" id="form_submit" name="form[submit]" class="btn btn-info btn">Create
+                            Security
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

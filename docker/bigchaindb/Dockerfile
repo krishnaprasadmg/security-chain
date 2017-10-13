@@ -4,7 +4,7 @@ COPY run.sh /root/run.sh
 
 RUN apk --update add --virtual build_deps wget ca-certificates build-base libffi-dev openssl-dev && \
     pip install --upgrade pip && \
-    pip install bigchaindb && \
+    pip install bigchaindb==0.9.5 && \
     rm -rf /var/cache/apk/* && \
     chmod +x /root/run.sh
 
