@@ -1,7 +1,23 @@
-security-chain app
+Bigchain DB 
+============
+
+- Uses blockchain consensus concept in to DB
+
+- Two layer of consensus 
+
+  1. Fault torelant DB cluster as core
+  2. Big chain DB (which uses it) adds blockchain consensus like double spending avoidance..
+
+- Bigchain DB = traditional DBMS + blockchain features
+
+- IPDB Foundation & IPDB offers serverless Big chain as a service: https://ipdb.io/
+
+
+Security-chain app
 ==================
 
 WIP loan securitization on blockchain (bigchain DB)
+
 
 Setup
 ======
